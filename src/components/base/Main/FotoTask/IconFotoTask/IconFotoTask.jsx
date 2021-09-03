@@ -6,8 +6,8 @@ import styles from './styles';
 jss.setup(preset());
 const { classes } = jss.createStyleSheet(styles).attach();
 
-function Header() {
-  return <div className={classes.header}>Header</div>;
+function IconFotoTask() {
+  return <div className={classes.IconFotoTask}></div>;
 }
 
-export default Header;
+export default IconFotoTask;
