@@ -20,6 +20,9 @@ function Side() {
         <li>
           <Link to="/users">Users</Link>
         </li>
+        <li>
+          <Link to="/kanbanBoard">Kanban Board</Link>
+        </li>
       </ul>
     </div>
   );
