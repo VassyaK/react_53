@@ -7,10 +7,12 @@ import styles from './styles';
 jss.setup(preset());
 const { classes } = jss.createStyleSheet(styles).attach();
 
-const Task = ({ children }) => {
-  return <div className={classes.task}>{children}</div>;
+const Task = ({ children, classStyles }) => {
+  return <div className={classes[classStyles]}>{children}</div>;
 };
 Task.propTypes = {
   children: String || PropTypes.element,
+  classStyles: String || PropTypes.element,
 };
+
 export default Task;

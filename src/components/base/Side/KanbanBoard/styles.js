@@ -1,10 +1,10 @@
 export default {
   kanbanBoard: {
-    height: '55%',
-    width: '10%',
-    padding: '5px',
-
-    borderRadius: '10px',
-    border: '5px solid #f80d0d',
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    flexGrow: 5,
+    padding: '15px',
+    backgroundColor: '#39ccdf',
   },
 };

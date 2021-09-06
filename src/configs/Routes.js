@@ -6,7 +6,7 @@ import Users from '../components/base/Side/Users/Users';
 export default [
   {
     title: 'Home',
-    url: '/',
+    url: '/Home',
     component: Home,
   },
   {
