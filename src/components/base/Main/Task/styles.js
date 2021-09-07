@@ -1,5 +1,5 @@
 export default {
-  task: {
+  Task: {
     height: '95%',
     padding: '10px',
     backgroundColor: '#a8a996',

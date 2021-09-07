@@ -20,7 +20,7 @@ export default [
     component: About,
   },
   {
-    title: 'KanbanBoard',
+    title: 'Kanban Board',
     url: '/kanbanBoard',
     component: KanbanBoard,
   },

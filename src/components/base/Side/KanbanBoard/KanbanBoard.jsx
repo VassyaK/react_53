@@ -4,9 +4,6 @@ import preset from 'jss-preset-default';
 import styles from './styles';
 
 import Task from '../../Main/Task';
-import HeaderTask from '../../Main/headerTask/HeaderTask';
-import FotoTask from '../../Main/FotoTask/FotoTask';
-import TextStringTask from '../../Main/TextStringTask/TextStringTask';
 
 jss.setup(preset());
 const { classes } = jss.createStyleSheet(styles).attach();
@@ -14,19 +11,22 @@ const { classes } = jss.createStyleSheet(styles).attach();
 function KanbanBoard() {
   return (
     <div className={classes.kanbanBoard}>
-      <Task>
-        <HeaderTask>
-          <FotoTask />
-          <TextStringTask />
-          <TextStringTask />
-          <TextStringTask />
-        </HeaderTask>
+      <Task classStyles="Task">
+        <Task classStyles="HeaderTask">
+          <Task classStyles="FotoTask">
+            <Task classStyles="IconFotoTask" />
+            <Task classStyles="InputFotoTask" />
+          </Task>
+          <Task classStyles="TextStringTask" />
+          <Task classStyles="TextStringTask" />
+          <Task classStyles="TextStringTask" />
+        </Task>
       </Task>
-      <Task>
-        <HeaderTask />
+      <Task classStyles="Task">
+        <Task classStyles="HeaderTask" />
       </Task>
-      <Task />
-      <Task />
+      <Task classStyles="Task" />
+      <Task classStyles="Task" />
     </div>
   );
 }

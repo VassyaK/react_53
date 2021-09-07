@@ -1,8 +1,8 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import jss from 'jss';
 import preset from 'jss-preset-default';
 import styles from './styles';
-import Task from '../../Main/Task';
 
 jss.setup(preset());
 const { classes } = jss.createStyleSheet(styles).attach();
@@ -10,8 +10,7 @@ const { classes } = jss.createStyleSheet(styles).attach();
 function About() {
   return (
     <div className={classes.about}>
-      About
-      <Task className={classes[Task]} />
+      <img src="https://funik.ru/wp-content/uploads/2018/10/1990c74b723035f47f81.jpg" />
     </div>
   );
 }
