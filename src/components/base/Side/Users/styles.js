@@ -12,7 +12,7 @@ export default {
     flexDirection: 'column ',
     padding: '5px',
     paddingRight: '25px',
-    color: '#fff',
+    color: '#000',
     textDecoration: 'none',
     fontWeight: '600',
   },

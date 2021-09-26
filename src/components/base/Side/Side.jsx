@@ -23,6 +23,9 @@ function Side() {
         <li>
           <Link to="/kanbanBoard">Kanban Board</Link>
         </li>
+        <li>
+          <Link to="/kanban">Kanban</Link>
+        </li>
       </ul>
     </div>
   );
